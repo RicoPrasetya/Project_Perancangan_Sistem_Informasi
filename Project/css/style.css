@@ -1,0 +1,707 @@
+.signin {
+    background-color: #d3d3d3;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.cd__main {
+    min-height: 720px;
+    position: relative;
+}
+
+.login {
+    position: relative;
+    height: 650px;
+    width: 405px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 40px 60px;
+    padding-top: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(50, 50, 50, 0.8)), url('../image/back2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 30px 60px -5px #000;
+}
+
+.form-login {
+    padding-top: 80px;
+}
+
+.span-login {
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: 0.8;
+    display: inline-block;
+    position: relative;
+    top: -65px;
+    transition: all 0.5s ease-in-out;
+    margin-left: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-login {
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    padding-right: 40px;
+    display: block;
+    height: 15px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0);
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.text-login:focus {
+    outline: 0;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.text-login:focus+span {
+    opacity: 1;
+}
+
+.text-login:hover {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.input-login[type="text"],
+.input-login[type="password"],
+.input-login[type="email"] {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.checkbox-text {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.checkbox-text:hover {
+    cursor: pointer;
+}
+
+.custom-checkbox {
+    margin-left: 20px;
+}
+
+.custom-checkbox {
+    -webkit-appearance: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 8px;
+    border-radius: 2px;
+    display: inline-block;
+    position: relative;
+    top: 6px;
+}
+
+.custom-checkbox:hover {
+    background-color: rgba(17, 97, 237, 0.8);
+    cursor: pointer;
+}
+
+.custom-checkbox:checked {
+    background-color: rgba(17, 97, 237, 1);
+}
+
+.custom-checkbox:checked:after {
+    content: '\2714';
+    font-size: 10px;
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    color: #fff;
+}
+
+.custom-checkbox:focus {
+    outline: none;
+}
+
+label {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.signin {
+    background-color: #1161ed;
+    color: #FFF;
+    width: 100%;
+    padding: 10px 20px;
+    display: block;
+    height: 39px;
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    text-transform: uppercase;
+}
+
+.signin:hover {
+    background: #4082f5;
+    box-shadow: 0px 4px 35px -5px #4082f5;
+    cursor: pointer;
+}
+
+.signin:focus {
+    outline: none;
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    top: 85px;
+    position: relative;
+}
+
+.login a {
+    text-align: center;
+    display: block;
+    top: 120px;
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.login-form {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('../image/back1.jpg');
+    background-size: cover;
+    /* Agar gambar menyesuaikan ukuran layar */
+    background-position: center;
+    /* Agar gambar berada di tengah */
+    background-repeat: no-repeat;
+    /* Mencegah pengulangan gambar */
+}
+
+/* Menyembunyikan form yang tidak aktif */
+.hidden {
+    display: none;
+}
+
+/* Transisi smooth antara tampilan form */
+form {
+    transition: opacity 0.5s ease-in-out;
+}
+
+form.active {
+    opacity: 1;
+}
+
+form.hidden {
+    opacity: 0;
+    display: none;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: space-between;
+    /* Membuat tombol berada di kiri dan kanan */
+    width: 100%;
+    /* Menyesuaikan lebar container */
+}
+
+#signin-btn {
+    align-self: flex-start;
+    /* Memastikan tombol berada di kiri */
+}
+
+#signup-btn {
+    align-self: flex-end;
+    /* Memastikan tombol berada di kanan */
+}
+
+.toggle-buttons {
+    margin-top: 50px;
+}
+
+/* Tombol aktif dan nonaktif */
+.toggle-buttons button {
+    background: transparent;
+    /* Tombol yang tidak aktif tetap transparan */
+    border-radius: 20px;
+    /* Pinggiran tumpul pada tombol tidak aktif juga */
+    border: none;
+    /* Menghilangkan border */
+    padding: 10px 20px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(17, 98, 237, 0.2);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.toggle-buttons button.active {
+    color: white;
+    background-color: #1161ed;
+    /* Ubah warna latar belakang tombol aktif */
+    border-radius: 20px;
+    /* Membuat pinggiran tumpul */
+    border: none;
+    /* Menghilangkan border */
+    padding: 10px 20px;
+    /* Tambahan padding agar tombol terlihat lebih bagus */
+    transition: background-color 0.3s ease-in-out;
+    /* Tambahkan transisi untuk efek halus */
+}
+
+.toggle-buttons button:hover {
+    background: #4082f5;
+    /* Efek hover untuk tombol */
+    color: white;
+}
+
+.toggle-buttons button.nonactive {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.toggle-password:focus {
+    outline: none;
+}
+
+.eye-icon {
+    font-size: 18px;
+}
+
+.login h1 {
+    text-align: center;
+    /* Menyusun teks di tengah */
+    font-size: 24px;
+    /* Ukuran font untuk header */
+    color: #fff;
+    /* Warna teks */
+    margin-bottom: 20px;
+    /* Memberikan jarak bawah dari header ke form */
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Halaman index.php*/
+
+.user-index {
+    margin: 0px 0px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('../image/back1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Menjaga background tetap saat di-scroll */
+}
+
+
+/* Header section */
+.user-header {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 51, 102, 0.95); /* Biru Tua */
+    height: 67px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nama-situs {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #ffffff; /* Putih */
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.logo-situs {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.user-navbar-container {
+    display: flex;
+    justify-content: left;
+    flex-grow: 1;
+    margin-left: 78px;
+}
+
+.user-navbar {
+    color: #ffffff; /* Putih */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 0 20px;
+    line-height: 67px;
+}
+
+.user-profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; /* Putih */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #003366; /* Biru Tua */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #e7f3fe; /* Biru Muda */
+}
+
+.user-profile-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Add hover effect for navigation links */
+.user-navbar:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Putih transparan */
+    border-radius: 5px;
+}
+
+
+.flex-container {
+    display: flex;
+}
+
+/* Sidebar section */
+.user-aside {
+    position: sticky;
+    top: 67px;
+    background: rgba(255, 255, 255, 0.95); /* Putih transparan */
+    padding: 0;
+    width: 20%;
+    min-height: 600px;
+    height: 100%;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #003366; /* Biru Tua */
+    background: rgba(0, 51, 102, 0.1); /* Biru Tua Transparan */
+    transition: background 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sidebar-link i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.sidebar-link:hover {
+    background: rgba(0, 51, 102, 0.3); /* Biru Tua Lebih Gelap */
+}
+
+/* Ensure that the sidebar takes full width of its container */
+.user-aside nav {
+    width: 100%;
+}
+
+
+
+/* Main content */
+.user-main {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Section: About */
+.about-hospital {
+    background-color: rgba(240, 240, 240, 0.5);
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about-hospital h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #003366; /* Biru Tua */
+}
+
+.about-hospital p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-more {
+    background-color: #004080; /* Biru Tua */
+    color: #ffffff; /* Putih */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-more:hover {
+    background-color: #005f73; /* Biru Lebih Gelap */
+}
+
+/* Section: Services */
+.services {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.services h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-item {
+    background-color: rgba(240, 240, 240, 0.9); /* Putih transparan */
+    border: 1px solid rgba(0, 51, 102, 0.1); /* Biru Tua Transparan */
+    border-radius: 10px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-item i {
+    font-size: 40px;
+    color: #004080; /* Biru Tua */
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Section: Doctor Schedule */
+.doctor-schedule {
+    background-color: rgba(240, 240, 240, 0.5);
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.doctor-schedule h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #003366;
+}
+
+/* Section: Testimonials */
+.testimonials {
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial-item {
+    background-color: rgba(240, 240, 240, 0.9); /* Putih transparan */
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section: Emergency Contact */
+.emergency-contact {
+    background-color: rgba(240, 240, 240, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+.emergency-contact h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #003366;
+}
+
+.emergency-contact p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+/* Footer section */
+.user-footer {
+    position: sticky;
+    bottom: 0;
+    background: rgba(0, 51, 102, 0.95); /* Biru Tua */
+    padding-top: 10px;
+    color: #ffffff; /* Putih */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    color: #ffffff; /* Putih */
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #ffffff; /* Putih */
+    font-size: 15px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right p {
+    margin: 5px 0;
+}
+
+.footer-socials {
+    margin-top: 10px;
+}
+
+.footer-socials a {
+    color: #ffffff; /* Putih */
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-socials a:hover {
+    color: #8fd694; /* Hijau Cerah */
+}
